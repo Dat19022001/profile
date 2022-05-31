@@ -1,0 +1,144 @@
+.about{
+  width: calc(100% - 320px);
+  height: auto;
+  clear: both;
+  margin-left: 320px;
+  &__sub{
+    padding: 170px 20px 120px 20px;
+  }
+  &__title{
+    color: #1a1a1a;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  &__content{
+    width: 100%;
+    height: auto;
+    clear: both;
+    display: flex;
+    padding-top: 60px;
+  }
+  &__left{
+    width: 50%;
+  }
+  &__info{
+    margin-bottom: 55px;
+    h3{
+      font-size: 22px;
+      font-weight:300;
+      margin-bottom: 15px;
+      span{
+        font-weight: 600;
+      }
+    }
+    p{
+      color: #7e7e7e;
+      font-size: 18px;
+      line-height: 30px;
+      max-width: 90%;
+    }
+  }
+  &__skill{
+    h3{
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    p{
+      color: #7e7e7e;
+      font-size: 18px;
+      line-height: 30px;
+      max-width: 90%;
+    }
+  }
+  &__progress{
+    width: 100%;
+    display: flex;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    margin: 0 0 10px -20px;
+  }
+  &__inner{
+    margin-bottom: 31px;
+    width: 50%;
+    padding: 0 20px;
+  }
+  &__label{
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  &__bg{
+    width: 100%;
+    min-width: 100%;
+    position: relative;
+    height: 16px;
+    border: 1px solid #7e7e7e;
+    padding: 2px;
+  }
+  &__bar{
+    height: 100%;
+  }
+  &__in{
+    height: 100%;
+    background: #34495e;
+    overflow: hidden;
+  }
+  &__button{
+    button{
+      border-radius: 6px;
+      padding: 13px 30px;
+      background: #fff;
+      border-color: #000;
+      margin-top: 10px;
+      font-size: 18px;
+      letter-spacing: .4px;
+      transition: .5s;
+      &:hover{
+        background: #000;
+        color: #fff;
+      }
+    }
+  }
+  &__right{
+    padding-left: 120px;
+    width: 50%;
+  }
+  &__img{
+    position: relative;
+    img{
+      max-width: 100%;
+    }
+  }
+  &__experience{
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-color: #34495e;
+  }
+  &__body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    color: #fff;
+    h3{
+      font-weight: 700;
+      font-size: 35px;
+    }
+    span{
+      font-size: 19px;
+      font-weight:500;
+    }
+  }
+}

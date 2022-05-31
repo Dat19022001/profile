@@ -1,0 +1,139 @@
+.sidebar{
+  width: 320px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 10%);
+  z-index: 98;
+  transition: all .5s ease;
+  display: flex;
+  flex-direction:column;
+  flex: 1 1;
+  justify-content:space-between;
+  &__header{
+    width: calc(100%);
+    height: auto;
+    clear: both;
+    float: left;
+    border-bottom: 1px solid $colorHeader;
+    padding: 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    img{
+      max-width: 120px;
+    }
+  }
+  &__imgDark{
+    display: none;
+  }
+  &__setting{
+    cursor: pointer;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.1);
+    i{
+      font-size: 23px;
+      line-height:0;
+      transition: .3s;
+    }
+  }
+  &__setting-dark{
+    display: none;
+  }
+  &__menu{
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    padding: 60px 40px;
+  }
+  &__item{
+    margin: 0 0 8px;
+    width: 100%;
+    float: left;
+    a{
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color:$colorMenu;
+      font-size: 15px;
+      font-weight: 500;
+      border-radius: 6px;
+      padding: 9px 15px;
+      position: relative;
+      transition: all .3s ease;
+      &:before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color:$colorBgMenu;
+        border-radius: 6px;
+        z-index: -1;
+        transition: all .3s ease;
+      }
+    }
+    a.active:before,
+    a:hover:before{
+      width: 100%;
+    }
+  }
+  &__icon{
+    width: 22px;
+    height: 22px;
+    margin-right: 15px;
+    filter: invert(.3);
+    transition: all .3s ease;
+  }
+  &__footer{
+    border-top: 1px solid $colorHeader;
+    width: calc(100% );
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+  }
+  &__avarta{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: inline-block;
+  }
+  &__img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 100%;
+    border: 1px solid $colorImg;
+    background-image: url(http://edinareact.ibthemespro.com/img/about/avatar.jpg)
+  }
+  &__body{
+    padding-left: 13px;
+    h3{
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+    }
+    a{
+      color: $colorFooter ;
+      font-size: 14px;
+      transition: all .3s ease;
+    }
+  }
+}
