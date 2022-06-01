@@ -4,23 +4,29 @@ import {useEffect} from 'react'
 export default function Home1({data = []}){
   let {img, extra, title, des } = data;
   useEffect(() => {
-    const textEl = document.getElementById('text')
-    let text = textEl.innerHTML;
-    let idx = 1
-    let speed = 300 / 1
-    writeText()
-    textEl.innerHTML='';
-    function writeText() {
-        textEl.innerText = text.slice(0, idx)
+    const textElement = document.querySelector('#text')
+    const mang = [...title]
+    const text = mang[0]
+    let speed = 200
 
-        idx++
+    let index = 0
 
-        if(idx > text.length) {
-            idx = 1;
-        }
+    const writeText = () => {
 
-        setTimeout(writeText, speed)
-    }
+      textElement.innerText = `${text.slice(0, index)} |`;
+
+      index++;
+
+      if (index > text.length) {
+        index = 0;
+        let random = Math.floor(Math.random() * mang.length)
+        text = mang[random]
+      }
+      setTimeout(writeText, speed);
+
+    };
+
+    writeText();
   },[])
   return(
    <div className="home" id="home">
@@ -31,7 +37,7 @@ export default function Home1({data = []}){
         </div>
         <div className="home__extra">
           <h5>{extra}</h5>
-          <div className="home__title"><h1 id="text">{title}</h1><h1>|</h1></div>
+          <div className="home__title"><h1 id="text"></h1></div>
           <p>{des}</p>
           <ul className="home__icon">
               <li>

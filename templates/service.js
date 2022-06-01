@@ -5,7 +5,7 @@ export default function Service({data = []}){
   let {title, subtitle, list, model} =data
   useEffect(() => {
     let list = document.querySelectorAll(".service__inner");
-    let listModal = document.querySelectorAll(".service__model-item");
+    let listModal = document.querySelectorAll(".service__check");
     let modal = document.querySelector(".service__fix");
     list.forEach((item, index) => {
       item.addEventListener('click',()=>{
@@ -13,13 +13,10 @@ export default function Service({data = []}){
         listModal[index].classList.add('active');
       })
     })
-    let exit = document.querySelector(".service__model-exit");
-    console.log(exit)
+    let exit = document.querySelector(".service__exit");
     exit.addEventListener('click', ()=>{
-      let exitItem = document.querySelector(".service__model-item.active");
-      console.log(exitItem);
+      let exitItem = document.querySelector(".service__check.active");
       let exitModal = document.querySelector(".service__fix.active");
-      console.log(exitModal);
       exitModal.classList.remove('active');
       exitItem.classList.remove('active');
     })

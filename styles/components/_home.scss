@@ -1,7 +1,6 @@
 .home{
-  width: calc(100% - 320px);
+  width: 100%;
   min-height: 100vh;
-  margin-left: 320px;
   position: relative;
   display: flex;
   background-color: #f5f8fc;
@@ -96,4 +95,25 @@
       }
     }
   }
+}
+.home.active{
+    background-color: #191c26;
+    .home{
+      &__extra{
+        h1,h5{
+          color: #fff !important;
+        }
+      }
+      &__icon{
+        svg{
+          color: #fff !important;
+        }
+      }
+      &__btn{
+        a{
+          color: #fff !important;
+          border-color: #fff !important;
+        }
+      }
+    }
 }

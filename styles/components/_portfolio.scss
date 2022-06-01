@@ -1,6 +1,5 @@
 .portfolio{
-  width: calc(100% - 320px);
-  margin-left: 320px;
+  width: 100%;
   padding:120px 20px;
   &__title{
     h3{
@@ -44,9 +43,11 @@
     }
   }
   &__img{
+    width: calc(100% - 30px);
+    overflow: hidden;
+    border-radius: 10px;
     img{
-      border-radius: 10px;
-      width: 94%;
+      width: 100%;
       &:hover{
         transform: scale(1.05);
         transition: all 0.5s;
@@ -78,6 +79,16 @@
       font-size: 22px;
       font-weight: 700;
       transition: all .3s ease;
+    }
+  }
+}
+.portfolio.active{
+  .portfolio{
+    &__title h3{
+      color: #fff !important;
+    }
+    &__info h4{
+      color: #fff !important;
     }
   }
 }

@@ -1,6 +1,5 @@
 .testimonial{
-  width: calc(100% - 320px);
-  margin-left: 320px;
+  width: 100%;
   background-color: #f5f8fc;
   padding: 120px 20px 140px;
   &__title{
@@ -32,7 +31,7 @@
   }
   &__body{
     width: 94% !important;
-    height: auto;
+    height: 100%;
     position: relative;
     background-color: #fff;
     padding: 50px 50px 60px;
@@ -84,5 +83,23 @@
     font-weight: 400;
     max-width: 600px;
     color: #7e7e7e;
+  }
+}
+.testimonial.active{
+  background-color: #191c26 !important;
+  .testimonial{
+    &__title h3,&__short h4{
+      color: #fff !important;
+    }
+    &__body{
+      background-color: #111319;
+    }
+    &__show{
+      .slick-dots button{
+        &::before{
+          color: #fff !important;
+        }
+      }   
+    }
   }
 }

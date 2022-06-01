@@ -2,6 +2,7 @@
 @import '../styles/base/helper';
 @import '../styles/base/reset';
 @import '../styles/base/variables';
+
 //components
 @import '../styles/components/sidebar';
 @import '../styles/components/home';
@@ -13,3 +14,4 @@
 @import '../styles/components/contact';
 
 // layout
+@import '../styles/layout/_header.scss'

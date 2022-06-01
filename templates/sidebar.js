@@ -28,25 +28,25 @@ export default function Sidebar({data = []}){
         </div>
         <ul className="sidebar__menu">
           <li className="sidebar__item">
-            <a href="#home" className="sidebar__choose active"><img className="sidebar__icon" src="http://edinareact.ibthemespro.com/img/svg/home.svg" /> Home</a>
+            <a href="#home" className="sidebar__choose active home1"><img className="sidebar__icon" src="http://edinareact.ibthemespro.com/img/svg/home.svg" /> Home</a>
           </li>
           <li className="sidebar__item">
-            <a href="#about" className="sidebar__choose" ><img className="sidebar__icon" src="http://edinareact.ibthemespro.com/img/svg/human.svg" /> About</a>
+            <a href="#about" className="sidebar__choose about1"  ><img className="sidebar__icon" src="http://edinareact.ibthemespro.com/img/svg/human.svg" /> About</a>
           </li>
           <li className="sidebar__item">
-            <a href="#service" className="sidebar__choose"><img className="sidebar__icon" src="http://edinareact.ibthemespro.com/img/svg/service.svg" /> Service</a>
+            <a href="#service" className="sidebar__choose service1"><img className="sidebar__icon" src="http://edinareact.ibthemespro.com/img/svg/service.svg" /> Service</a>
           </li>
           <li className="sidebar__item">
-            <a href="#portfolio" className="sidebar__choose"><img className="sidebar__icon" src="http://edinareact.ibthemespro.com/img/svg/portfolio.svg" /> Portfolio</a>
+            <a href="#portfolio" className="sidebar__choose portfolio1"><img className="sidebar__icon" src="http://edinareact.ibthemespro.com/img/svg/portfolio.svg" /> Portfolio</a>
           </li>
           <li className="sidebar__item">
-            <a href="#testimonial" className="sidebar__choose"><img className="sidebar__icon" src="	http://edinareact.ibthemespro.com/img/svg/testimonial.svg" /> Testimonial</a>
+            <a href="#testimonial" className="sidebar__choose testimonial1"><img className="sidebar__icon" src="	http://edinareact.ibthemespro.com/img/svg/testimonial.svg" /> Testimonial</a>
           </li>
           <li className="sidebar__item">
-            <a href="#blog" className="sidebar__choose"><img className="sidebar__icon" src="http://edinareact.ibthemespro.com/img/svg/blog.svg" /> Blog</a>
+            <a href="#blog" className="sidebar__choose blog1"><img className="sidebar__icon" src="http://edinareact.ibthemespro.com/img/svg/blog.svg" /> Blog</a>
           </li>
           <li className="sidebar__item">
-            <a href="#contact" className="sidebar__choose"><img className="sidebar__icon" src="	http://edinareact.ibthemespro.com/img/svg/contact.svg" /> Contact</a>
+            <a href="#contact" className="sidebar__choose contact1"><img className="sidebar__icon" src="	http://edinareact.ibthemespro.com/img/svg/contact.svg" /> Contact</a>
           </li>
         </ul>
       </div>

@@ -13,8 +13,41 @@ import Contact from '../templates/contact'
 // import data
 import { data } from '../data/data'
 
-
+import {useEffect} from 'react'
 export default function Home() {
+  useEffect(() => {
+    //scorll
+    let section = document.querySelector(".Content")
+    let elements = section.childNodes
+    let listChildren = document.querySelectorAll('.sidebar__choose');
+
+    window.addEventListener("scroll",() =>{
+      let current = '';
+      elements.forEach(item =>{
+        let itemTop = item.offsetTop;
+        let itemHeight = item.offsetHeight;
+        if(window.pageYOffset >= (itemTop - itemHeight/ 3)){
+          current = item.getAttribute('id');
+        }
+      })
+      listChildren.forEach(item =>{
+        item.classList.remove('active');
+        if(item.classList.contains(`${current}1`)){
+          item.classList.add('active')
+        }
+      })
+    })
+    // dark light light
+    
+    let setting = document.querySelector(".sidebar__setting");
+    setting.addEventListener("click",()=>{
+      let site = document.querySelector(".site");
+      let siteElements = site.childNodes;
+      site.classList.toggle('active');
+      siteElements[0].classList.toggle('active');
+      siteElements[1].childNodes.forEach(i => i.classList.toggle('active'));
+    })
+  })
   return (
     <React.Fragment>
       <Head>
@@ -25,13 +58,15 @@ export default function Home() {
       <main>
         <div className="site">
           <Sidebar data = {data.sidebar} />
-          <Home1 data = {data.home} />
-          <About data = {data.about} />
-          <Service data = {data.service} />
-          <Portfolio data = {data.portfolio} />
-          <Testimonial data = {data.testimonial}/>
-          <Portfolio data = {data.blog}/>
-          <Contact data = {data.contact}/>
+          <div className="Content">
+            <Home1 data = {data.home} />
+            <About data = {data.about} />
+            <Service data = {data.service} />
+            <Portfolio data = {data.portfolio} />
+            <Testimonial data = {data.testimonial}/>
+            <Portfolio data = {data.blog}/>
+            <Contact data = {data.contact}/>
+          </div>
         </div>
       </main>
     </React.Fragment>
