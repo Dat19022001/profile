@@ -37,6 +37,9 @@
     padding: 50px 50px 60px;
     border-radius: 6px;
     margin-bottom: 30px;
+    @media (max-width:767px) {
+      width: 100% !important;
+    }
   }
   &__detail{
     width: 100%;

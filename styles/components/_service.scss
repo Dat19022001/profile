@@ -41,6 +41,11 @@
         margin-right:0;
       }
     }
+    @media (max-width:767px) {
+      width: 100%;
+      margin-bottom:15px;
+      margin-right: 0;
+    }
   }
   &__inner {
     position: relative;

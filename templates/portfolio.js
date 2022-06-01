@@ -38,7 +38,18 @@ export default function portfolio({data = []}){
   const settings = {
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        }
+      }
+    ]
   };
   return(
     <div className="portfolio" id={`${title === 'Blog' ? 'blog' : 'portfolio'}`}>

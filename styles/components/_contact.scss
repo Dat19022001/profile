@@ -38,11 +38,9 @@
     padding: 33px 35px 41px;
     border-radius: 6px;
     @media (max-width:768px) {
-      width: calc((100% - 30px)/2);
-      margin-bottom:20px;
-      &:nth-child(2n){
-        margin-right: 0;
-      }
+      width: 100%;
+      margin-bottom:15px;
+      margin-right: 0;
     }
   }
   &__icon{

@@ -49,7 +49,7 @@ export default function Service({data = []}){
           </ul>
         </div>
       </div>
-      <div className="service__fix">
+      <div className="service__fix">  
         <Modal data ={model}/>
       </div>
     </div>
