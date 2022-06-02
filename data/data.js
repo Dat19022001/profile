@@ -12,7 +12,7 @@ export const data = {
     img:"http://edinareact.ibthemespro.com/img/hero/2.jpg",
     extra:"Hello, I'm Rokers Nelson",
     title:[
-      "WEB DEVLOPER",
+      "Web Devloper",
       "Graphic Desginer"
     ],
     des:"I'm a Freelancer Front-end React Developer based In USA, over 6 years of professional experience.",
