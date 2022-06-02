@@ -1,5 +1,5 @@
-import {FiFacebook,FiTwitter,FiInstagram,FiLinkedin} from 'react-icons/Fi'
-import {AiOutlineDribbble} from 'react-icons/Ai'
+import {FiFacebook,FiTwitter,FiInstagram,FiLinkedin} from 'react-icons/fi'
+import {AiOutlineDribbble} from 'react-icons/ai'
 import {useEffect} from 'react'
 export default function Home1({data = []}){
   let {img, extra, title, des } = data;

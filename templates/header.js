@@ -1,6 +1,6 @@
-import {FaMoon,FaSun} from 'react-icons/Fa'
-import {FiMenu} from 'react-icons/Fi' 
-import {IoMdClose} from'react-icons/Io'
+import {FaMoon,FaSun} from 'react-icons/fa'
+import {FiMenu} from 'react-icons/fi' 
+import {IoMdClose} from'react-icons/io'
 export default function Header(){
   return(
     <div className="header">

@@ -1,4 +1,4 @@
-import {BsArrowRightShort} from 'react-icons/Bs'
+import {BsArrowRightShort} from 'react-icons/bs'
 import {useEffect} from 'react'
 import Modal from '../templates/modal'
 export default function Service({data = []}){

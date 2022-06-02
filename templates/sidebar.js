@@ -1,6 +1,5 @@
-import {FaMoon,FaSun} from 'react-icons/Fa'
+import {FaMoon,FaSun} from 'react-icons/fa'
 import {useEffect} from 'react'
-import Link from 'next/link';
 export default function Sidebar({data = []}){
   let {imgLight, imgDark, Name, gmail} = data;
   useEffect(() => {
