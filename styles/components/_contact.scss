@@ -25,6 +25,7 @@
     margin-bottom: 30px;
     display:flex;
     flex-wrap: wrap;
+    transform:translateX(100%);
   }
   &__inner{
     width: calc((100% - 60px)/3);
@@ -77,6 +78,7 @@
   &__body{
     display: flex;
     flex-wrap: wrap;
+    transform:translateX(-100%);
   }
   &__tt{
     width: 50%;
@@ -172,6 +174,14 @@
       iframe{
         border: 5px solid #000 !important;
       }
+    }
+  }
+}
+.contact.show{
+  .contact{
+    &__info,&__body{
+      transform:translateX(0);
+      transition: all 2s ease-in-out;
     }
   }
 }

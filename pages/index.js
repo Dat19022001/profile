@@ -47,6 +47,26 @@ export default function Home() {
       siteElements[0].classList.toggle('active');
       siteElements[1].childNodes.forEach(i => i.classList.toggle('active'));
     })
+
+    // scroll-animation
+
+    window.addEventListener('scroll', checkBoxes)
+
+    checkBoxes()
+
+    function checkBoxes() {
+        const triggerBottom = window.innerHeight / 5 * 4
+
+        elements.forEach(box => {
+            const boxTop = box.getBoundingClientRect().top
+
+            if(boxTop < triggerBottom) {
+                box.classList.add('show')
+            } else {
+                box.classList.remove('show')
+            }
+        })
+    }
   })
   return (
     <React.Fragment>

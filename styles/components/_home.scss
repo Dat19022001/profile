@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  transform: translateX(-100%);
   &__content{
     padding: 100px 20px
   }
@@ -116,4 +117,7 @@
         }
       }
     }
+}
+.home.show{
+  transform: translateX(0)
 }
